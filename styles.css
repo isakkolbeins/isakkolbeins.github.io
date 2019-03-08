@@ -26,7 +26,7 @@ body {
   position: fixed;
   z-index: 1;
   background-color: rgba(0,0,0, 0.5);
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .navbarWrapper {
@@ -88,16 +88,21 @@ body {
 }
 
 footer {
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0, 0.5);
   display: flex;
-  justify-content: space-around;
   font-weight: bold;
+  bottom: 0;
 }
 
 .footerElement {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding: 3rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 6rem;
 }
 
 .footerElement a {
@@ -106,7 +111,7 @@ footer {
 
 .footerElement img {
   height: 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .kolbeinsLogo{
@@ -120,6 +125,8 @@ footer {
 .eLogo {
   color: #46c8fa;
   font-size: 1.3em;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 .content {
@@ -162,18 +169,18 @@ footer {
   padding-left: 1.5rem;
 }
 
-.html {width: 100%; background-color: #46c8fa;}
-.css {width: 95%; background-color: #46c8fa;}
-.js {width: 100%; background-color: #46c8fa;}
-.es {width: 45%; background-color: #46c8fa;}
-.java {width: 75%; background-color: #46c8fa;}
-.cpp {width: 40%; background-color: #46c8fa;}
-.git {width: 65%; background-color: #46c8fa;}
-.npm {width: 70%; background-color: #46c8fa;}
-.sql {width: 80%; background-color: #46c8fa;}
-.py {width: 85%; background-color: #46c8fa;}
-.react {width: 65%; background-color: #46c8fa;}
-.webgl {width: 30%; background-color: #46c8fa;}
+.html {width: 100%; background-color: #46c7fab2;}
+.css {width: 95%; background-color: #46c7fab2;}
+.js {width: 100%; background-color: #46c7fab2;}
+.es {width: 45%; background-color: #46c7fab2;}
+.java {width: 75%; background-color: #46c7fab2;}
+.cpp {width: 40%; background-color: #46c7fab2;}
+.git {width: 65%; background-color: #46c7fab2;}
+.npm {width: 70%; background-color: #46c7fab2;}
+.sql {width: 80%; background-color: #46c7fab2;}
+.py {width: 85%; background-color: #46c7fab2;}
+.react {width: 65%; background-color: #46c7fab2;}
+.webgl {width: 30%; background-color: #46c7fab2;}
 
 
 .bars {
@@ -193,7 +200,7 @@ footer {
   border-radius: 50%;
   width: 400px;
   height: 400px;
-
+  margin-top: 3rem;
   display: inline-block;
   position: relative;
 }
@@ -202,7 +209,6 @@ footer {
   width: 400px;
   height: 400px;
   border: 2px solid black;
-
   display: block;
 }
 .circleImgWrapper:after {
@@ -214,4 +220,31 @@ footer {
   border-radius: 50%;
   position: absolute;
   top: 0; left: 0;
+}
+
+.work {
+  width: 100%;
+}
+.workWrapper a{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.workWrapper img {
+  width: 70%;
+  border: 0.2rem solid;
+  border-radius: 25%;
+}
+
+.plainText {
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+.plainText p {
+  margin: 1rem;
 }
