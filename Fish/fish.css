@@ -66,6 +66,10 @@ body {
   margin-bottom: -5px;
 }
 
+.info {
+  font-family: 'Open Sans', sans-serif;
+}
+
 main {
     display: flex;
     justify-content: space-between;
@@ -257,3 +261,5 @@ canvas {
       max-height: 300px;
       }
   }
+
+  ::-webkit-scrollbar { width: 0 !important }

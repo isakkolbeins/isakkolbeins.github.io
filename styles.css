@@ -248,3 +248,6 @@ footer {
 .plainText p {
   margin: 1rem;
 }
+
+
+::-webkit-scrollbar { width: 0 !important }
