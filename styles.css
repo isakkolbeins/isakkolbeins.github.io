@@ -1,6 +1,4 @@
 * {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
   margin: 0;
   color: white;
 }
@@ -8,54 +6,19 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 body {
   height: 100%;
   width: 100%;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   font-family: 'Open Sans', sans-serif;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(0,0,0, 0.5);
-  padding: 0.2rem;
-}
-
-.navbarWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  font-size: 1rem;
-  max-width: 1200px;
-
-}
-
-.navLinksRight {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.navLinkLeft {
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.navLink a {
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 2rem; 
 }
 
 .mainHome {
@@ -70,16 +33,17 @@ body {
 }
 
 .mainInfo {
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   font-weight: bold;
-  border: 0.5rem solid #46c8fa;
+  border: 0.5em solid #46c8fa;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
-  padding: 2rem;
+  width: 70%;
+  max-width: 500px;
+  padding: 3em;
   text-align: center;
   border-radius: 50px;
   display: flex;
@@ -87,52 +51,11 @@ body {
   justify-content: space-between;
 }
 
-footer {
-  justify-content: center;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(0,0,0, 0.5);
-  display: flex;
-  font-weight: bold;
-  bottom: 0;
-}
-
-.footerElement {
-  display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-right: 6rem;
-}
-
-.footerElement a {
-  text-decoration: none;
-}
-
-.footerElement img {
-  height: 2rem;
-  margin: 0.5rem;
-}
-
-.kolbeinsLogo{
-  font-family: 'Righteous', cursive;
-  font-weight: 400;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.eLogo {
-  color: #46c8fa;
-  font-size: 1.3em;
-  margin-top: -5px;
-  margin-bottom: -5px;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .section {
@@ -141,21 +64,24 @@ footer {
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  padding: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 2em;
+}
+
+.about {
+  margin-top: 4rem;
 }
 
 .content h2 {
   color: #46c8fa;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 .container {
   width: 100%;
-  margin: 1rem 0 0 0;
+  margin: 0.5rem 0 0 0;
   background-color: #46c7fa2d;
   border-radius: 1rem;
 }
@@ -163,34 +89,72 @@ footer {
 .skills {
   text-align: left;
   font-weight: bold;
-  padding: 0.5rem; 
+  padding: 0.2rem;
   color: black;
   border-radius: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
 }
 
-.html {width: 100%; background-color: #46c7fab2;}
-.css {width: 95%; background-color: #46c7fab2;}
-.js {width: 100%; background-color: #46c7fab2;}
-.es {width: 45%; background-color: #46c7fab2;}
-.java {width: 75%; background-color: #46c7fab2;}
-.cpp {width: 40%; background-color: #46c7fab2;}
-.git {width: 65%; background-color: #46c7fab2;}
-.npm {width: 70%; background-color: #46c7fab2;}
-.sql {width: 80%; background-color: #46c7fab2;}
-.py {width: 85%; background-color: #46c7fab2;}
-.react {width: 65%; background-color: #46c7fab2;}
-.webgl {width: 30%; background-color: #46c7fab2;}
-
+.html {
+  width: 100%;
+  background-color: #46c7fab2;
+}
+.css {
+  width: 95%;
+  background-color: #46c7fab2;
+}
+.js {
+  width: 100%;
+  background-color: #46c7fab2;
+}
+.es {
+  width: 45%;
+  background-color: #46c7fab2;
+}
+.java {
+  width: 75%;
+  background-color: #46c7fab2;
+}
+.cpp {
+  width: 40%;
+  background-color: #46c7fab2;
+}
+.git {
+  width: 65%;
+  background-color: #46c7fab2;
+}
+.npm {
+  width: 70%;
+  background-color: #46c7fab2;
+}
+.sql {
+  width: 80%;
+  background-color: #46c7fab2;
+}
+.py {
+  width: 85%;
+  background-color: #46c7fab2;
+}
+.react {
+  width: 45%;
+  background-color: #46c7fab2;
+}
+.webgl {
+  width: 30%;
+  background-color: #46c7fab2;
+}
 
 .bars {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  width: 70%;
 }
 
-.barsLeft, .barsRight {
+.barsLeft,
+.barsRight {
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -198,56 +162,80 @@ footer {
 
 .circleImgWrapper {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 80%;
+  height: 80%;
   margin-top: 3rem;
   display: inline-block;
   position: relative;
 }
 .circleImg {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
   display: block;
+  box-sizing: border-box;
 }
 .circleImgWrapper:after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border-radius: 50%;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
 }
 
-.work {
-  width: 100%;
-}
-.workWrapper a{
-  width: 100%;
+.workWrapper a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 .workWrapper img {
   width: 70%;
-  border: 0.2rem solid;
-  border-radius: 25%;
+  border: 0.2rem solid #46c8fa;
+  border-radius: 10%;
 }
 
 .plainText {
   width: 70%;
   line-height: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .plainText p {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
+::-webkit-scrollbar {
+  width: 0 !important;
+}
 
-::-webkit-scrollbar { width: 0 !important }
+@media only screen and (max-width: 500px) {
+  .mainInfo {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bars {
+    flex-direction: column;
+  }
+  .barsLeft,
+  .barsRight {
+    width: 100%;
+  }
+}

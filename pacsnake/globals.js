@@ -7,10 +7,10 @@ Evil, ugly (but "necessary") globals, which everyone can use.
 
 */
 
-"use strict";
+'use strict';
 
-var g_canvas = document.getElementById("myCanvas");
-var g_ctx = g_canvas.getContext("2d");
+var g_canvas = document.getElementById('myCanvas');
+var g_ctx = g_canvas.getContext('2d');
 var g_gameOver = false;
 
 // The "nominal interval" is the one that all of our time-based units are

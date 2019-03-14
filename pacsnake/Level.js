@@ -2,7 +2,7 @@
 // Level STUFF
 // ==========
 
-"use strict";
+'use strict';
 
 // 0 - passable terrain
 // 1 - a normal wall
@@ -10,6 +10,8 @@
 // 3 - top and side exits
 // PacSnake can get through 0 and 3
 // Ghosts can get through 0 and 2
+
+// prettier-ignore
 var Level = {
  level : [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
