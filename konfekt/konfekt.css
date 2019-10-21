@@ -1,0 +1,98 @@
+svg { 
+    position: abselte;
+    margin: 0 auto;
+    width: 100%;
+}
+
+path {
+    stroke:rgb(255, 200, 74);
+    fill: rgb(255, 200, 74);
+    stroke-dasharray: 1500;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+    stroke-width: 1;
+}
+
+#N {
+    stroke-dasharray: 2400;
+    opacity: 10;
+    animation: animateN 3s cubic-bezier(0, 0.23, 1, .1);
+    stroke-width: 1;
+}
+
+#start1, #end1 {
+animation:  animate 3s cubic-bezier(0, 0.23, 1, .1),
+            blink 0.5s 3.25s ease-in-out;
+
+}
+
+#start2, #end2 {
+    animation:  animate 3s cubic-bezier(0, 0.23, 1, .1),
+                blink 0.5s 3s ease-in-out;
+}
+
+html  {
+    background-color: dimgray;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1500;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1500;
+    }
+
+    90% {   
+        fill: rgba(255, 200, 74, 0);
+    }
+
+    100% {
+        opacity: 10;
+        stroke-dashoffset: 0;
+
+        fill: rgba(255, 200, 74, 1);
+    }
+}
+
+@keyframes animateN {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 2400;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 2400;
+    }
+
+    90% {   
+        fill: rgba(255, 200, 74, 0);
+    }
+
+    100% {
+        opacity: 10;
+        stroke-dashoffset: 0;
+        fill: rgba(255, 200, 74, 1);
+    }
+}
+
+@keyframes blink {
+    0% {
+        stroke:rgb(255, 200, 74);
+        fill: rgba(255, 200, 74, 1);
+    }
+    50% {
+        stroke: transparent;
+        fill: rgba(255, 200, 74, 0);
+    }
+    100% {
+        stroke:rgb(255, 200, 74);
+        fill: rgba(255, 200, 74, 1);
+    }
+}
